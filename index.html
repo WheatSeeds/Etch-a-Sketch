@@ -7,13 +7,19 @@
 </head>
 <body>
     <h1 id="title">Etch-a-Sketch</h1>
-    <div id="grid"></div>
-    <div id="menu">
-        <button id="brush">Brush</button>
-        <button id="fill">Fill</button>
-        <button id="eraser">Eracer</button>
-        <button id="clean">Clean</button>
-    </div>
+    <main>
+        <div id="leftMenu">
+            <label for="colorSelection">Color</label>
+            <input type="color" id="colorSelection" value="black"/>
+        </div>
+        <div id="grid"></div>
+        <div id="rightMenu">
+            <button id="brush">Brush</button>
+            <button id="fill">Fill</button>
+            <button id="eraser">Eraser</button>
+            <button id="clean">Clean</button>
+        </div>
+    </main>
     <script src="easScript.js"></script>
 </body>
 </html>
