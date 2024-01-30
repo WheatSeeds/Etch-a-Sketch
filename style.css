@@ -11,6 +11,7 @@ body{
 #grid{
     border: 5px solid black;
     width: 512px;
+    height: 512px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,9 +21,16 @@ body{
 #leftMenu, #rightMenu{
     display: flex;
     flex-direction: column;
+    padding: 20px;
+
+}
+#rightMenu button{
+    height: 50px;
+    width: 50px;
 }
 main{
     display: flex;
+    align-items: center;
 }
 
 input[type='color'] {
