@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title">Etch-a-Sketch</h1>
+    <header>
+        <span id="title">Etch-a-Sketch</span>
+        <div id="sizeValue" class="size-value">64 - 64</div>
+        <input type="range" id="sizeSelection" min="0" max="4" value="3">
+    </header>
     <main>
-        <div id="leftMenu">
-            <input type="color" id="colorSelection" value="black"/>
-            <input type="range" id="sizeSelection" min="0" max="4" value="0">
-        </div>
         <div id="grid"></div>
-        <div id="rightMenu">
-            <button id="brush">Brush</button>
-            <button id="fill">Fill</button>
-            <button id="eraser">Eraser</button>
-            <button id="clean">Clean</button>
+        <div id="menu">
+            <button id="brush"><img id="brushImg" src="Img/brush.png" alt=""></button>
+            <button id="fill"><img id="fillImg" src="Img/fill.png" alt=""></button>
+            <button id="eraser"><img id="eraserImg" src="Img/eraser.png" alt=""></button>
+            <button id="clean"><img id="cleanImg" src="Img/clean.png" alt=""></button>
+            <input type="color" id="colorSelection" value="#6154d6"/>
+            
         </div>
     </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/">Icons taken from flaticon.com</a>
+    </footer>
     <script src="easScript.js"></script>
 </body>
 </html>
